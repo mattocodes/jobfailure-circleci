@@ -7,7 +7,7 @@ jobs:
     steps:
       - run:
           name: Failure Step
-          command: exit 0
+          command: exit 1
       - run:
           name: Execution Step
           command: echo Hello Error!
