@@ -7,7 +7,7 @@ jobs:
     steps:
       - run:
           name: Failure Step
-          command: return 0
+          command: return 1
       - run:
           name: Execution Step
           command: echo Hello Error!
@@ -17,7 +17,7 @@ workflows:
   my_workflow:
     jobs:
       - myJob
-      
+
 
 
       
